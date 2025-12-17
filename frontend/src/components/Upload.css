@@ -1,0 +1,63 @@
+.upload-container {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.upload-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.upload-container form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.upload-container input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.upload-container button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload-container button:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.upload-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.status {
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
