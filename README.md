@@ -6,12 +6,12 @@ Overview:
 
 ## Features
 
-? Upload PDF, TXT, DOCX documents  
-? Automatic text chunking and embedding  
-? Vector similarity search with FAISS  
-? Beautiful React frontend  
-? RESTful API with Swagger docs  
-? Caching for embeddings  
+- Upload PDF, TXT, DOCX documents  
+- Automatic text chunking and embedding  
+- Vector similarity search with FAISS  
+- Beautiful React frontend  
+- RESTful API with Swagger docs  
+- Caching for embeddings  
 
 ## Tech Stack
 
@@ -89,13 +89,13 @@ Open browser: [http://localhost:8000](http://localhost:8000)
 
 ### API Endpoints
 
-- `GET /` — Root endpoint with API info
-- `GET /health` — Health check
-- `POST /upload` — Upload document (PDF, TXT, DOCX)
-- `POST /query` — Query documents
-- `GET /documents` — List uploaded documents
-- `DELETE /documents/{id}` — Remove document
-- `GET /docs` — Swagger UI documentation
+- `GET /` â€” Root endpoint with API info
+- `GET /health` â€” Health check
+- `POST /upload` â€” Upload document (PDF, TXT, DOCX)
+- `POST /query` â€” Query documents
+- `GET /documents` â€” List uploaded documents
+- `DELETE /documents/{id}` â€” Remove document
+- `GET /docs` â€” Swagger UI documentation
 
 ### Example Usage
 
@@ -160,21 +160,21 @@ uvicorn src.api:app --reload --log-level debug
 
 ```
 rag-document-qa/
-??? frontend/                 # React frontend
-?   ??? src/
-?   ?   ??? App.jsx
-?   ?   ??? App.css
-?   ?   ??? components/
-?   ?   ?   ??? Upload.jsx
-?   ?   ?   ??? Upload.css
-?   ?   ?   ??? Query.jsx
-?   ?   ?   ??? Query.css
-?   ?   ??? main.jsx
-?   ??? index.html
-?   ??? package.json
-?   ??? vite.config.js
-?   ??? dist/               # Built frontend (after npm run build)
-??? src/
+--- frontend/                 # React frontend
+-   --- src/
+-   -   --- App.jsx
+-   -   --- App.css
+-   -   --- components/
+-   -   -   --- Upload.jsx
+-   -   -   --- Upload.css
+-   -   -   --- Query.jsx
+-   -   -   --- Query.css
+-   -   --- main.jsx
+-   --- index.html
+-   --- package.json
+-   --- vite.config.js
+-   --- dist/               # Built frontend (after npm run build)
+--- src/
 ?   ??? api.py              # FastAPI application
 ?   ??? document_loader.py  # PDF/TXT/DOCX loader
 ?   ??? embeddings.py       # Embedding manager
